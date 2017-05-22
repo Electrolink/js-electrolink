@@ -11,7 +11,8 @@
     "url": "https://github.com/Electrolink/js-electrolink/issues"
   },
   "dependencies": {
-    "paho-mqtt": "^1.0.3"
+    "paho-mqtt": "^1.0.3",
+    "short-uuid": "^2.3.2"
   },
   "devDependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",

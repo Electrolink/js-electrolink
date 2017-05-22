@@ -1,5 +1,6 @@
 import 'paho-mqtt';
 const EventEmitter = require('events');
+const short = require('short-uuid');
 
 
 class Electrolink extends EventEmitter {
@@ -19,9 +20,14 @@ class Electrolink extends EventEmitter {
         this.client.onMessageArrived = this.onMessageArrived.bind(this);
 
         this.client.connect({onSuccess:this.onConnect.bind(this)});
+
+        this.translator = short();
         
     }
    
+   get uuid() { // call it with this.uuid
+        return this.translator.new();
+   }
     // called when the client connects
     onConnect() {
         console.log("connected to broker");
