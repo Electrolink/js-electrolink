@@ -1,14 +1,14 @@
-## ES6 Babel Browserify Boilerplate
+## Electrolink implementation in JS ES6
 
-This is an boilerplate repo to make it easy to experiment with [ES6]. It's inspired by [es6-browserify-boilerplate](https://github.com/thoughtram/es6-browserify-boilerplate) but uses babel (formerly 6to5) for transpilation which does not depend on any runtime.
+Work in progress...
 
 
 ### Initial setup
 
 ```bash
 # Clone the repo...
-git clone https://github.com/thoughtram/es6-6to5-browserify-boilerplate.git
-cd es6-6to5-browserify-boilerplate
+git clone https://github.com/Electrolink/js-electrolink.git
+cd js-electrolink
 
 # Then, you need to install all the dependencies...
 npm install
@@ -25,15 +25,6 @@ gulp serve
 # If you wanna Gulp to re-build on every change...
 gulp watch
 ```
-
-
-### WTF is ES6?
-Simply, the next version of JavaScript that contains some really cool features. You might check out some of these:
-
-- https://wiki.mozilla.org/ES6_plans
-- http://globaldev.co.uk/2013/09/es6-part-1/
-- http://code.tutsplus.com/tutorials/eight-cool-features-coming-in-es6--net-33175
-
 
 ### What are all the pieces involved?
 
