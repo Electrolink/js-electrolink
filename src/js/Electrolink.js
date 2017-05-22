@@ -41,9 +41,13 @@ class Electrolink extends EventEmitter {
         if (message.destinationName === "common/reply") {
             console.log("onMessageArrived:"+message.payloadString, message);
             let s = JSON.parse(message.payloadString);
-            let value = s.value;
-            devices.push(value);
-            console.log(devices);
+            let requested = s.requested;
+
+            if (requested === "ping") {
+                let value = s.value;
+                this.devices.push(value);
+            }
+
         }
     }
 
